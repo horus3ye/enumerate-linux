@@ -8,15 +8,8 @@ These commands can be used to upgrade shell
 which python && which python3
 which sh && which bash
 
-*Depending on the version you have try this code
-*and the shell type you found
-
-python 'import pty;pty.spawn("/bin/bash")'
-
-**Then press (ctrl + Z) it will suspend your reverse shell session and  return back to the terminal of your machine
-  use this command
+python -c 'import pty;pty.spawn("/bin/bash")'
+Ctrl + Z
 stty raw -echo;reset;fg
-
 export TERM=xterm
-export SHELL=/bin/bash
-stty rows 136 cols 32
+stty rows 36 cols 167
