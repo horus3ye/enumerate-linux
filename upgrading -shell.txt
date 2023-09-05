@@ -1,0 +1,22 @@
+##########################################
+This commands can be used to upgrade shell 
+##########################################
+
+
+**after you get your reverse shell try this
+
+which python && which python3
+which sh && which bash
+
+*depcending on the version you have try this code
+*and the shell type you found
+
+python 'import pty;pty.spawn("/bin/bash")'
+
+**then press (ctrl + Z) it will suspend you reverse shell session and  return back to the terminal of your machine
+  use this command
+stty raw -echo;reset;fg
+
+*stty raw -echo
+*reset
+*fg
